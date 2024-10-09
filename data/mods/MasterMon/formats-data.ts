@@ -6051,5 +6051,3 @@ export const FormatsData: SpeciesFormatsDataTable = {
 			tier: "Illegal",
 		},
 	};
-	
-};
