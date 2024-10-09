@@ -27,6 +27,14 @@ export const Formats: FormatList = [
 		// name: "gen9petmods",
 	},
 	{
+		name: "Mastermon",
+		mod: 'FAGGOTMON',
+		gameType: 'doubles',
+		challengeShow: false,
+		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Force Open Team Sheets', 'Limit One Restricted'],
+		restricted: ['Restricted Legendary'],
+	},
+	{
 		name: "[Gen 9] Alternatium EX",
 		desc: `<b>Alternatium EX</b>: A metagame made up of only Pokemon with alternate forms exist, with all of them being seperate and unique Pokemon.`,
 		threads: [
