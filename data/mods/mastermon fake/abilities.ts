@@ -22,7 +22,8 @@ Ratings and how they work:
 	  The sort of ability that defines metagames.
 	ex. Imposter, Shadow Tag
 */
-export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
+
+export const Abilities: {[abilityid: string]: AbilityData} = {
 	tectonicmastery: {
 		onFractionalPriorityPriority: -1,
 		onFractionalPriority(priority, pokemon, target, move) {
@@ -32,7 +33,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Ground') {
-				if (!this.heal(target.baseMaxhp / 4)) {
+				if (!this.heal(target.baseMaxhp / 3)) {
 					this.add('-immune', target, '[from] ability: Tectonic Mastery');
 				}
 				return null;
@@ -40,7 +41,7 @@ export const Abilities: {[abilityid: string]: ModdedAbilityData} = {
 		},
 		flags: {breakable: 1},
 	    name: "Tectonic Mastery",
-		rating: 3.5,
+		rating: 3,
 		num: 311,
 	},
 };

@@ -1,4 +1,4 @@
-export const Moves: {[moveid: string]: ModdedMoveData} = {
+export const Moves: { [k: string]: ModdedMoveData; } = {
 	vulcaniser: {
 		num: 920,
 		accuracy: 100,
