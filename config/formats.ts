@@ -28,7 +28,7 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 9] Mastermon",
-		mod: 'mastermon',
+		mod: 'pokemonsigma',
 		gameType: 'doubles',
 		challengeShow: false,
 		ruleset: ['Flat Rules', '!! Adjust Level = 50', 'Min Source Gen = 9', 'VGC Timer', 'Force Open Team Sheets', 'Limit One Restricted'],
