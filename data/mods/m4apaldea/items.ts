@@ -1,4 +1,18 @@
 export const Items: {[itemid: string]: ModdedItemData} = {
+	chanderlualite: {
+		name: "Chanderlualite",
+		spritenum: 578,
+		megaStone: "Chandelure-Mega",
+		megaEvolves: "Chandelure",
+		itemUser: ["Chandelure"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -2028,
+		gen: 8,
+		desc: "If held by a Chandelure, this item allows it to Mega Evolve in battle.",
+	},
 	quaquavalite: {
 		name: "Quaquavalite",
 		spritenum: 578,

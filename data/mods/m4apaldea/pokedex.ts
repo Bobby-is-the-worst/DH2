@@ -2,6 +2,18 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 
 	// slate 1
 
+	chandelure: {
+		inherit: true,
+		mega: "chandeluremega",
+		megaAbility: {0: "Levitate"},
+		megaName: "Chandelure-Mega",
+		megaType : ["Ghost", "Fairy"],
+		megaStats: {hp: 60, atk: 55, def: 110, spa: 155, spd: 125, spe: 115},
+		megaStone: "Chanderlualite",
+		movepoolAdditions: ["hypervoice", "relicsong"],
+		megaCreator: "Osama",
+	},
+	
 	quaquaval: {
 		inherit: true,
 		mega: "quaquavalmega",
